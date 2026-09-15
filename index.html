@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="OUTLAW.LTD — a bold creative studio crafting premium digital experiences, visual identities, and stories that refuse to blend in."
+    />
+    <meta name="theme-color" content="#080807" />
+    <title>OUTLAW.LTD — Creative Studio</title>
+    <meta property="og:title" content="OUTLAW.LTD" />
+    <meta
+      property="og:description"
+      content="A bold creative studio crafting premium digital experiences."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ===== NAVBAR ===== -->
+    <header id="navbar" class="site-header">
+      <nav class="nav-inner" aria-label="Primary">
+        <a href="#home" class="logo">OUTLAW<span class="logo-dot">.</span>LTD</a>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link">Home<span class="nav-underline"></span></a></li>
+          <li><a href="#about" class="nav-link">About<span class="nav-underline"></span></a></li>
+          <li><a href="#youtube" class="nav-link">YouTube<span class="nav-underline"></span></a></li>
+          <li><a href="#gallery" class="nav-link">Gallery<span class="nav-underline"></span></a></li>
+          <li><a href="#contact" class="nav-link">Contact<span class="nav-underline"></span></a></li>
+        </ul>
+
+        <div class="nav-right">
+          <button
+            type="button"
+            id="themeToggleDesktop"
+            class="theme-toggle"
+            role="switch"
+            aria-checked="false"
+            aria-label="Toggle dark mode"
+          >
+            <span class="theme-toggle-knob">
+              <svg class="icon-sun" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+              <svg class="icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+            </span>
+            <span class="sr-only">Toggle dark mode</span>
+          </button>
+          <button
+            type="button"
+            id="menuToggle"
+            class="menu-btn"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></svg>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ===== MOBILE MENU ===== -->
+    <div id="mobileMenu" class="mobile-menu-overlay" aria-hidden="true">
+      <div class="mobile-menu-backdrop" data-close-menu></div>
+      <aside class="mobile-menu-panel">
+        <div class="mobile-menu-header">
+          <span class="logo">OUTLAW<span class="logo-dot">.</span>LTD</span>
+          <button type="button" class="mobile-menu-close" data-close-menu aria-label="Close menu">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+        </div>
+        <nav class="mobile-menu-nav" aria-label="Mobile">
+          <a href="#home" class="mobile-menu-link" data-close-menu>Home <span class="mobile-menu-num">01</span></a>
+          <a href="#about" class="mobile-menu-link" data-close-menu>About <span class="mobile-menu-num">02</span></a>
+          <a href="#youtube" class="mobile-menu-link" data-close-menu>YouTube <span class="mobile-menu-num">03</span></a>
+          <a href="#gallery" class="mobile-menu-link" data-close-menu>Gallery <span class="mobile-menu-num">04</span></a>
+          <a href="#contact" class="mobile-menu-link" data-close-menu>Contact <span class="mobile-menu-num">05</span></a>
+        </nav>
+        <div class="mobile-menu-footer">
+          <span class="mobile-menu-label">Dark Mode</span>
+          <button
+            type="button"
+            id="themeToggleMobile"
+            class="theme-toggle"
+            role="switch"
+            aria-checked="false"
+            aria-label="Toggle dark mode"
+          >
+            <span class="theme-toggle-knob">
+              <svg class="icon-sun" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+              <svg class="icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+            </span>
+            <span class="sr-only">Toggle dark mode</span>
+          </button>
+        </div>
+      </aside>
+    </div>
+
+    <main>
+      <!-- ===== HERO ===== -->
+      <section id="home" class="hero">
+        <div class="hero-bg">
+          <img
+            src="hero-bg.jpg"
+            alt="background"
+            aria-hidden="true"
+            class="hero-bg-img"
+            fetchpriority="high"
+            decoding="async"
+          />
+          <div class="hero-overlay"></div>
+          <div class="hero-overlay-right"></div>
+        </div>
+        <div class="hero-orb"></div>
+        <div class="container hero-content">
+          <p class="eyebrow hero-eyebrow" style="animation-delay:0.1s">Outlaw.ltd — Est. 2026</p>
+          <h1 class="hero-title" style="text-shadow:0 2px 40px rgba(0,0,0,0.3)">
+            <span class="hero-title-line" style="animation-delay:0.15s">OUTLAW</span>
+            <span class="hero-title-line hero-title-accent" style="animation-delay:0.28s">.LTD</span>
+          </h1>
+          <p class="hero-tagline" style="animation-delay:0.42s">
+            The official website of OUTLAW.LTD, featuring all our YouTube channels,
+            creative content, and real-life knowledge for everyday life..
+          </p>
+          <div class="hero-cta" style="animation-delay:0.55s">
+            <a href="#about" class="btn btn-primary">
+              Explore OUTLAW
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+            <a href="#youtube" class="btn btn-hero-ghost">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+              Our Channels
+            </a>
+          </div>
+        </div>
+        <div class="scroll-indicator">
+          <span class="scroll-indicator-text">Scroll</span>
+          <div class="scroll-indicator-line"><div class="scroll-indicator-dot"></div></div>
+        </div>
+      </section>
+
+      <!-- ===== ABOUT ===== -->
+      <section id="about" class="section">
+        <div class="container">
+          <div class="reveal section-header">
+            <p class="eyebrow">ABOUT OUTLAW.LTD</p>
+            <h2 class="section-title">The official home of OUTLAW.LTD.</h2>
+            <p class="section-lead">
+              OUTLAW.LTD brings together our official YouTube channels, 
+              creative content, and knowledge inspired by real life.
+              Explore our work, discover our channels, and find ideas 
+              that can add something meaningful to your journey.
+            </p>
+          </div>
+
+          <div class="about-cards">
+            <div class="card-surface about-story-card">
+              <span class="card-eyebrow">OUR PURPOSE</span>
+              <p class="card-body">
+                OUTLAW.LTD was created as a place to bring everything we build
+                under one identity — from our YouTube channels and creative work 
+                to thoughts, experiences, and knowledge drawn from real life.
+                One place. One vision. Built different.
+              </p>
+            </div>
+            <div class="card-surface about-story-card">
+              <span class="card-eyebrow">ALL OUR CHANNELS</span>
+              <p class="card-body">
+                Discover all official OUTLAW.LTD YouTube channels, each created
+                with its own identity, content, and purpose.
+              </p>
+            </div>
+          </div>
+
+          <div class="reveal-stagger values-grid" id="valuesGrid">
+            <div class="card-surface value-card">
+              <div class="value-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.8a2 2 0 0 0 1.3 1.3L21 12l-5.8 1.9a2 2 0 0 0-1.3 1.3L12 21l-1.9-5.8a2 2 0 0 0-1.3-1.3L3 12l5.8-1.9a2 2 0 0 0 1.3-1.3L12 3z"/></svg>
+              </div>
+              <h3 class="value-title">ALL OUR CHANNELS</h3>
+              <p class="value-body">Discover all official OUTLAW.LTD YouTube channels, each with its own content, identity, and purpose.</p>
+            </div>
+            <div class="card-surface value-card">
+              <div class="value-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+              </div>
+              <h3 class="value-title">REAL-LIFE KNOWLEDGE</h3>
+              <p class="value-body">Explore ideas, lessons, and knowledge inspired by real life — made to inform, inspire, and add value.</p>
+            </div>
+            <div class="card-surface value-card">
+              <div class="value-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+              </div>
+              <h3 class="value-title">ONE OFFICIAL HUB</h3>
+              <p class="value-body">Everything OUTLAW.LTD in one place — our channels, content, updates, and what we're building next.</p>
+            </div>
+            <div class="card-surface value-card">
+              <div class="value-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              </div>
+              <h3 class="value-title">Fast &amp; Focused</h3>
+              <p class="value-body">Speed without compromise. We ship quickly and iterate relentlessly, never sacrificing quality.</p>
+            </div>
+          </div>
+
+          <div class="stats-strip">
+            <div class="stat"><p class="stat-num">OFFICIAL</p><p class="stat-label">YOUTUBE CHANNELS</p></div>
+            <div class="stat"><p class="stat-num">ONE</p><p class="stat-label">OFFICIAL WEBSITE</p></div>
+            <div class="stat"><p class="stat-num">REAL</p><p class="stat-label">LIFE KNOWLEDGE</p></div>
+            <div class="stat"><p class="stat-num">OUTLAW</p><p class="stat-label">Company.ltd</p></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== YOUTUBE ===== -->
+      <section id="youtube" class="section section-alt">
+        <div class="container">
+          <div class="reveal youtube-header">
+            <div class="youtube-header-text">
+              <p class="eyebrow">OFFICIAL YOUTUBE</p>
+              <h2 class="section-title">Explore the OUTLAW.LTD channels.</h2>
+              <p class="section-lead">
+                Discover our official YouTube channels, original content, and ideas 
+                inspired by real life. Watch, learn, and follow the OUTLAW.LTD journey.
+              </p>
+            </div>
+            <a href="https://youtube.com/@sanatan307-q1p?si=6AHEyU1_WCH14Q2m" target="_blank" rel="noopener noreferrer" class="btn btn-youtube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+              Subscribe
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+          </div>
+
+          <div class="reveal-stagger video-grid" id="videoGrid">
+            <a href="https://youtu.be/0pZyjsBzuMA?si=LnyDsmQIRinkpGyd" target="_blank" rel="noopener noreferrer" class="video-card">
+              <div class="video-thumb">
+                <img src="thumbnail 1.jpg" alt="Sanatan X" loading="lazy" />
+                <div class="video-thumb-overlay"></div>
+                <span class="video-play"><svg width="22" height="22" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="2" stroke-linejoin="round"><polygon points="6 4 20 12 6 20 6 4"/></svg></span>
+                <span class="video-badge">YouTube</span>
+              </div>
+              <div class="video-body">
+                <h3 class="video-title">SANATAN X</h3>
+                <p class="video-desc">Sanatan X Channel Fir Best Videos</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== GALLERY ===== -->
+      <section id="gallery" class="section">
+        <div class="container">
+          <div class="reveal section-header">
+            <p class="eyebrow">OUTLAW.LTD GALLERY</p>
+            <h2 class="section-title">Explore the OUTLAW world.</h2>
+            <p class="section-lead">
+              A collection of visuals, stories, and ideas from the
+              world of OUTLAW.LTD.
+            </p>
+          </div>
+
+          <div class="reveal-stagger gallery-grid" id="galleryGrid">
+            <button type="button" class="gallery-item gallery-wide" data-index="0" aria-label="Open image: Minimalist modern facade with geometric lines">
+              <img src="1-photo.jpg" alt="Minimalist modern facade with geometric lines" loading="lazy" />
+              <div class="gallery-overlay"></div>
+              <span class="gallery-plus"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+            </button>
+            <button type="button" class="gallery-item gallery-tall" data-index="1" aria-label="Open image: Editorial portrait in velvet attire with shadow play">
+              <img src="2-photo.jpg" alt="Editorial portrait in velvet attire with shadow play" loading="lazy" />
+              <div class="gallery-overlay"></div>
+              <span class="gallery-plus"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+            </button>
+            <button type="button" class="gallery-item" data-index="2" aria-label="Open image: Abstract neon cityscape at night">
+              <img src="3-photo.jpg" alt="Abstract neon cityscape at night" loading="lazy" />
+              <div class="gallery-overlay"></div>
+              <span class="gallery-plus"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+            </button>
+            <button type="button" class="gallery-item" data-index="3" aria-label="Open image: Minimalist architecture against a dark sky">
+              <img src="4-photo.jpg" alt="Minimalist architecture against a dark sky" loading="lazy" />
+              <div class="gallery-overlay"></div>
+              <span class="gallery-plus"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+            </button>
+            <button type="button" class="gallery-item gallery-tall" data-index="4" aria-label="Open image: Moody portrait with dramatic lighting">
+              <img src="5-photo.jpg" alt="Moody portrait with dramatic lighting" loading="lazy" />
+              <div class="gallery-overlay"></div>
+              <span class="gallery-plus"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+            </button>
+            <button type="button" class="gallery-item gallery-wide" data-index="5" aria-label="Open image: Light trails in a cityscape at night">
+              <img src="6-photo.jpg" alt="Light trails in a cityscape at night" loading="lazy" />
+              <div class="gallery-overlay"></div>
+              <span class="gallery-plus"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== CONTACT ===== -->
+      <section id="contact" class="section section-alt">
+        <div class="container">
+          <div class="contact-grid">
+            <div class="reveal contact-left">
+              <p class="eyebrow">CONNECT WITH OUTLAW</p>
+              <h2 class="section-title">Stay connected with OUTLAW.LTD.</h2>
+              <p class="section-lead">
+                Explore our official YouTube channels, discover new content, 
+                and connect with the OUTLAW.LTD community.
+              </p>
+              <div class="contact-info">
+                <div class="contact-info-row">
+                  <span class="contact-info-label">Email</span>
+                  <a href="mailto:official.outlaw.ltd@gmail.com" class="contact-info-value">official.outlaw.ltd@gmail.com</a>
+                </div>
+                <div class="contact-info-row">
+                  <span class="contact-info-label">Studio</span>
+                  <span class="contact-info-value">ONLINE — WORLDWIDE</span>
+                </div>
+              </div>
+              <div class="contact-socials">
+                <span class="contact-socials-label">Follow</span>
+                <div class="contact-socials-row">
+                  <a href="https://youtube.com/@sanatan307-q1p?si=W65z-fIRjDkgJKh9" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="YouTube">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+                  </a>
+                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                  </a>
+                  <a href="mailto:official.outlaw.ltd@gmail.com" class="social-icon" aria-label="Email">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="reveal">
+              <form id="contactForm" class="card-surface contact-form" action="https://formsubmit.co/ajax/official.outlaw.ltd@gmail.com" method="POST" novalidate>
+                <input type="hidden" name="_subject" value="New OUTLAW.LTD Website Message" />
+                <div class="form-field">
+                  <label for="name" class="form-label">Name</label>
+                  <input id="name" name="name" type="text" class="form-input" placeholder="Your name" />
+                  <p class="form-error" id="name-error"></p>
+                </div>
+                <div class="form-field">
+                  <label for="email" class="form-label">Email</label>
+                  <input id="email" name="email" type="email" class="form-input" placeholder="you@example.com" />
+                  <p class="form-error" id="email-error"></p>
+                </div>
+                <div class="form-field">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea id="message" name="message" rows="5" class="form-input form-textarea" placeholder="Tell us about your project..."></textarea>
+                  <p class="form-error" id="message-error"></p>
+                </div>
+                <button type="submit" id="submitBtn" class="btn btn-primary btn-full">
+                  <svg class="btn-icon-send" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                  <span class="btn-text">Send Message</span>
+                </button>
+                <div class="form-success" id="formSuccess" role="status" hidden>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                  Thanks! Your message has been sent. We'll be in touch soon.
+                </div>
+                <div class="form-error-banner" id="formErrorBanner" role="alert" hidden>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                  Please fix the highlighted fields and try again.
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#home" class="logo logo-lg">OUTLAW.LTD<span class="logo-dot">.</span>LTD</a>
+            <p class="footer-tagline">
+              OUTLAW.LTD is a digital media company behind a growing 
+              network of YouTube channels, creating distinctive content
+              , brands, and experiences for audiences worldwide.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h3 class="footer-heading">Navigate</h3>
+            <ul class="footer-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#youtube">YouTube</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3 class="footer-heading">Connect</h3>
+            <ul class="footer-links">
+              <li><a href="https://youtube.com/@sanatan307-q1p?si=W65z-fIRjDkgJKh9" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+              <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+              <li><a href="mailto:official.outlaw.ltd@gmail.com">Email</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-copy">&copy; <span id="year"></span> OUTLAW.LTD — All rights reserved.</p>
+          <p class="footer-credit">Powering channels. Building brands.</p>
+          <p class="footer-credit">Founder &amp; CEO — Abhay Thakur</p>
+         
+        </div>
+      </div>
+    </footer>
+
+    <!-- ===== BACK TO TOP ===== -->
+    <button type="button" id="backToTop" class="back-to-top" aria-label="Back to top" hidden>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+    </button>
+
+    <!-- ===== LIGHTBOX ===== -->
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+      <div class="lightbox-backdrop" data-lightbox-close></div>
+      <button type="button" class="lightbox-close" data-lightbox-close aria-label="Close viewer">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <button type="button" class="lightbox-prev" id="lightboxPrev" aria-label="Previous image">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <button type="button" class="lightbox-next" id="lightboxNext" aria-label="Next image">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+      <figure class="lightbox-figure">
+        <img id="lightboxImg" src="" alt="" class="lightbox-img" />
+        <figcaption id="lightboxCaption" class="lightbox-caption"></figcaption>
+      </figure>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
